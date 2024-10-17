@@ -20,12 +20,17 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        shell: cmd # Use cmd shell
+        shell: bash # Use bash shell
 
       - name: Build the app
         run: npm run build
-        shell: cmd # Use cmd shell
+        shell: bash # Use bash shell
 
       - name: Deploy to Local Server
         run: |
-        shell: cmd # Use cmd shell
+          # Add your deployment commands here
+          echo "Deploying to local server"
+          # Example commands to copy files to your local server or restart services
+          # cp -r build/* /path/to/your/local/server/directory/
+          # Restart your server if necessary
+        shell: bash # Use bash shell
